@@ -13,10 +13,12 @@ Main component includes:
 - 03pcs x Profibus connectors.
 
 II. TESTING DESCRIPTION
+
 The 220VAC lamp can be controlled in toogle mode by virtual and physical input as follows:
 - Touch button is connected to Arduino plus RS485 shield and send the command to PLC S7-300 via Profibus-DP network at Virtual Input I0.0
 - Inductive sensor is connected to PLC S7-300 directly at Physical Input I124.0
 - 24VDC relay coil is connected to PLC Physical Output Q124.0 and lamp 220VAC is connected to N.O (normal open) contact of this relay. Even though the lamp is controlled by Arduino or PLC, Arduino receive the feedback of lamp status from PLC at physical output Q0.0 and display lamp status by red led (lamp 220VAC off) /green led (lamp 220VAC on) on touch button.
+
 Check detail at: https://www.instructables.com/id/INTEGRATING-ARDUINO-INTO-PLC-SYSTEM/
 
 YouTube link:
